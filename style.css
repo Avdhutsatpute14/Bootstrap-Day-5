@@ -1,0 +1,68 @@
+@keyframes bounce{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(0px);}
+}
+
+bodt {
+    font-family: "poopins";
+}
+
+.navbar-brand {
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: 3;
+}
+
+#carousel-bg-image {
+    background: url(images/banner-img-1.jpg) center/cover;
+    height: 100vh;
+}
+.shopping-buttons {
+    background-color: rgb(0, 0, 0) !important;
+    color: aquamarine !important;
+    padding: 10px 28px  !important;
+    border-radius: 25px !important;
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+    border: 1px solid rgb(117, 64, 64) !important;
+    border: 1px solid rgba(255, 255, 255, 0.384) !important;
+}
+
+.shopping-buttons:hover {
+    background-color: red !important;
+    color: rgb(0, 0, 0) !important;
+    border-color:red !important;
+}
+
+.title::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: red;
+    transform: translateX(-20px);
+}
+
+
+.card-text{
+    color: rgb(246, 133, 13);
+}
+
+#offers{
+    background: url("./images/offer_img.jpg") center/cover;
+    height: 100vh;
+}
+
+.img-hover {
+    transform: scale(1.2);
+transition: 0.45s;
+}
+
+
+img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+   
+}
